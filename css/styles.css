@@ -1,2 +1,132 @@
 /* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
+
+:root {
+    --white: #fff;
+    --dk-blue: #0d1238;
+    --lt-blue: #272f70;
+    --dk-green: #374d12;
+    --lt-green: #54761b;
+}
+
+
+body {
+    font-family: sans-serif;
+    color: var(--white);
+    background-image: url(../img/oriental-tiles.png);
+}
+
+
+
+/* ************* Global Typography ******************* */
+h2 {
+    font-family: serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    padding: 0 0.75rem;
+}
+
+/* ******************form section *************  */
+
+section {
+    margin-top: 5rem;
+    padding: 1rem;
+    background-color: rgba(13, 18, 56, 0.7);
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+    background-color: var(--white);
+    color: var(--dk-blue);
+    border-radius: 5px;
+}
+
+fieldset > p {
+    color: var(--white);
+    background-color: var(--lt-green);
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 5px 5px 0 0;
+}
+
+fieldset > div {
+    padding: 0.75rem;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.flex-container > div{
+    flex: 0 1 50%;
+    margin-bottom: 0.75rem;
+}
+
+fieldset > div > label {
+    display: block;
+}
+
+fieldset > div > input {
+    width: 100%;
+    border: 1px solid #a2adb7;
+    background-color: #edeff0;
+    line-height: 2.5rem;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+}
+
+fieldset > div > input[type=submit] {
+    background-color: var(--lt-blue);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+fieldset > div > input[type=submit]:hover {
+    background-color: var(--dk-blue);
+    cursor: pointer;
+}
+
+fieldset a {
+    color: var(--lt-green);
+    text-decoration: none;
+}
+
+fieldset a:hover {
+    color: var(--dk-green);
+}
+
+
+/* *************** media queries ***************************  */
+
+@media only screen and (min-width: 1000px){
+    section {
+        display: flex;
+    }
+
+    .text-box {
+        max-width: 35%;
+    }
+    
+    form {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width:1440px){
+    section {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}
+

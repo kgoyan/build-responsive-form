@@ -10,30 +10,32 @@
 <body>
    
     <section>
+      <div class="text-box">
         <h2>Learn Web Design, Coding, & Much More</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nam, adipisci eligendi rem inventore illo porro quia maxime aliquid pariatur deserunt beatae modi facilis! Libero repudiandae repellendus vel cumque nostrum?</p>
-    </section>
-
+      </div>
     <form action="#" method="POST">
         <fieldset>
             <p>Try it for 7 days starting at 25$ a month</p>
             <!-- radio button options here, they require a name attribute to be connected, and a value attribute for the db info  -->
             <h3>Field of Interest</h3>
-            <div>
-                <input type="radio" id="html" name="area-interest" value="html" checked>
-                <label for="html">HTML</label>
-            </div>
-            <div>
-                <input type="radio" id="css" name="area-interest" value="css">
-                <label for="css">Styling a Website</label>
-            </div>
-            <div>
-                <input type="radio" id="javascript" name="area-interest" value="javascript">
-                <label for="javascript">JavaScript</label>
-            </div>
-            <div>
-                <input type="radio" id="ui/ux" name="area-interest" value="ui/ux">
-                <label for="ui/ux">UX/UI</label>
+            <div class="flex-container">
+                <div>
+                    <input type="radio" id="html" name="area-interest" value="html" checked>
+                    <label for="html">HTML</label>
+                </div>
+                <div>
+                    <input type="radio" id="css" name="area-interest" value="css">
+                    <label for="css">Styling a Website</label>
+                </div>
+                <div>
+                    <input type="radio" id="javascript" name="area-interest" value="javascript">
+                    <label for="javascript">JavaScript</label>
+                </div>
+                <div>
+                    <input type="radio" id="ui/ux" name="area-interest" value="ui/ux">
+                    <label for="ui/ux">UX/UI</label>
+                </div>
             </div>
 
             <!-- all inputs require a label that is connected to the input -->
@@ -51,14 +53,18 @@
             </div>
             <div>
                 <label for="password">Password</label>
-                <input type="password" id="password" required autocomplete="off" minlength="10" placeholder="Password must be 10 characters long">
+                <input type="password" id="password" required autocomplete="off" minlength="10" placeholder="Password must be 10 characters">
             </div>
             <div>
                 <input type="submit" value="Claim Your Free Trial &#9656;">
+              <div class="flex-container">
+                <label for="Terms">By signing up you are agreeing to our <a href="#">Terms of Service</a></label>
+                <input type="checkbox" id="Terms" name="Terms">
+              </div>
             </div>
         </fieldset>
     </form>
-
+    </section>
 
 </body>
 </html>
